@@ -1,20 +1,5 @@
 import os
 import sys
-
-#This section for Windows users only
-"""os.chdir(r"C:\spark\spark-files")
-os.curdir
-
-if 'SPARK_HOME' not in os.environ:
-    os.environ['SPARK_HOME'] = 'C:\spark'
-
-SPARK_HOME = os.environ['SPARK_HOME']
-
-sys.path.insert(0,os.path.join(SPARK_HOME,"python"))
-sys.path.insert(0,os.path.join(SPARK_HOME,"python","lib"))
-sys.path.insert(0,os.path.join(SPARK_HOME,"python","lib","pyspark.zip"))
-sys.path.insert(0,os.path.join(SPARK_HOME,"python","lib","py4j-0.10.4-src.zip"))"""
-
 from pyspark import SparkContext
 from pyspark import SparkConf
 from pyspark.mllib.feature import HashingTF
